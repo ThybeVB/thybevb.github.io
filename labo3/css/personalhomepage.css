@@ -14,3 +14,6 @@
     width: 5%;
     height: auto;
 }
+th, td {
+    border: 1px solid black;
+}
