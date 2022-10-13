@@ -1,0 +1,10 @@
+.hoofd {
+    float: right;
+    margin-right: 1vw;
+    width: 20vw;
+    height: auto;
+}
+
+th, td {
+    border: 1px solid black;
+}
