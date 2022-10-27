@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1 {
+            background-color: red;
+        }
+        p {
+            background-color: blue;
+        }
+        /* Er zijn block en inline elementen */
+        span {
+            background-color: yellow;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        .block {
+            width: 100px;
+            padding-left: 50px;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .blockPar {
+            width: 50%;
+            margin: 100px 50px 40px 30px;
+            padding: 50px 10px 100px 50px;
+        }
+        .spanCenter {
+            margin-right: auto;
+            margin-left: auto;
+            /* Width werkt niet op inline elementen */
+        }
+    </style>
+    <title>Box</title>
+</head>
+<body>
+    <h1 class="block">Vives</h1>
+    <p class="blockPar">Vives heeft verschillende campussen</p>
+    <span class="spanCenter">
+    CSS
+    </span>
+</body>
+</html>

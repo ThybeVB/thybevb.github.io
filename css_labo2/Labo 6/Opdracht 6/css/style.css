@@ -1,0 +1,11 @@
+li {
+    list-style-type: none;
+}
+
+.checklist > li {
+    list-style-image: url("../img/box.png");
+}
+
+.checklist > li.checked {
+    list-style-image: url("../img/checked.png");
+}
