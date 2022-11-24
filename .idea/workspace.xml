@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="295d479b-f5bb-4ecc-99d7-f91cd288d2d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css_labo3/homepage/img/gorillaz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/homepage/img/hoofd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/homepage/img/kendrick.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/homepage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/homepage/style/personalhomepage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/kalendertabel/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css_labo3/kalendertabel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="295d479b-f5bb-4ecc-99d7-f91cd288d2d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/vanbe/Documents/GitHub/thybevb.github.io/css_labo3/homepage/style",
+    "last_opened_file_path": "C:/Users/vanbe/Documents/frontendmentorprofilecardBeginSituatie",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,6 +54,7 @@
       <workItem from="1666897914868" duration="1048000" />
       <workItem from="1668075504119" duration="5537000" />
       <workItem from="1668101221383" duration="2598000" />
+      <workItem from="1668860206955" duration="122000" />
     </task>
     <servers />
   </component>
