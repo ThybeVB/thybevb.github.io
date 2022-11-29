@@ -1,10 +1,11 @@
-* {
-    font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+html {
     font-size: 1.2em;
+    font-family: "Verdana", "Helvetica", "Arial", sans-serif;
 }
 
 body {
     width: 95%;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -27,14 +28,25 @@ body > article > h1 {
     color: black;
 }
 
-body > article > h2 {
+body > article > h2:nth-of-type(1) {
     color: deeppink;
+}
+
+body > article > h2:nth-of-type(2) {
+    color: hotpink;
+}
+
+body > article > h2:nth-of-type(3) {
+    color: lightpink;
+}
+
+body > article a:hover {
+    color: brown;
 }
 
 header > p > img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 body > article {
@@ -43,6 +55,7 @@ body > article {
     text-align: center;
     border: 2px solid darkcyan;
     box-sizing: border-box;
+    background: url("../images/cocktail.gif") repeat-x;
 }
 
 body > section {
@@ -51,21 +64,28 @@ body > section {
     box-sizing: border-box;
 }
 
-footer {
-    clear: both;
-    text-align: center;
-    font-size: .6em;
-}
-
 #guarantee {
     display: block;
     border: 5px dashed white;
-    padding: 20px;
+    padding: 20px 20px 20px 70px;
     margin: 30px;
+    line-height: 1.7em;
+    font-style: italic;
     color: #444444;
-    background-color: #a7cece;
+    background: #a7cece url("../images/background.gif") no-repeat top left;
 }
 
-li:first-child {
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 50%;
+    padding-bottom: 2vh;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
     font-weight: bold;
 }
