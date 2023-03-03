@@ -1,16 +1,6 @@
-const setup = () => {
-    let pElement = document.getElementById("txtOutput");
-    let btnWijzig = document.getElementById("btnWijzig");
-
-    pElement.innerHTML = "Welkom!";
-
-    btnWijzig.addEventListener("click", () => {
-        klik(pElement);
+window.addEventListener("load", () => {
+    document.getElementById("txtOutput").innerHTML = "Welkom!";
+    document.getElementById("btnWijzig").addEventListener("click", () => {
+        pElement.innerHTML = "veranderd";
     });
-};
-
-const klik = (pElement) => {
-    pElement.innerHTML = "veranderd";
-};
-
-window.addEventListener("load", setup);
+});

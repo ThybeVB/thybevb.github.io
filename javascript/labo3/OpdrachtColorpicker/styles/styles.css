@@ -1,0 +1,13 @@
+#colorDemo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: rgb(255, 0, 0);
+
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.linkerhelft {
+    float: left;
+}
