@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" charset="utf-8" src="./scripts/script.js"></script>
+        <title>Opdracht formwaarden</title>
+    </head>
+    <body>
+        <label for="isRoker">Is roker</label>
+        <input id="isRoker" type="radio" />
+        <br />
+        <label for="moedertaal">Moedertaal</label>
+
+        <input name="moedertaal" id="nl" type="radio" />
+        <label for="nl">Nederlands</label>
+
+        <input name="moedertaal" id="fr" type="radio" />
+        <label for="fr">Frans</label>
+
+        <input name="moedertaal" id="en" type="radio" />
+        <label for="en">Engels</label>
+
+        <br />
+        <label for="buurland">Favoriete buurland</label>
+        <select id="buurland" name="buurland">
+            <option value="duitsland">Duitsland</option>
+            <option value="frankrijk">Frankrijk</option>
+            <option value="nederland">Nederland</option>
+        </select>
+        <br />
+        <label for="bestelling">Bestelling:</label>
+        <select id="bestelling" name="bestelling" multiple>
+            <option value="aardappelen">aardappelen</option>
+            <option value="brood">brood</option>
+            <option value="melk">melk</option>
+            <option value="biefstuk">biefstuk</option>
+            <option value="chips">chips</option>
+            <option value="krant">krant</option>
+        </select>
+
+        <br />
+        <input id="btnSubmit" type="submit" value="Toon resultaat" />
+    </body>
+</html>

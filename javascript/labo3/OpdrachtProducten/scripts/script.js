@@ -23,7 +23,7 @@ const updateSubtotals = (prijzen, aantallen, btws) => {
         let btw = parseFloat(btws[i].innerHTML);
 
         let subtotaal = prijs * aantal * (btw / 100 + 1);
-        subtotalen[i].innerHTML = subtotaal.toFixed(2) + " Euro";
+        subtotalen[i].innerHTML = subtotaal.toFixed(2).replace(".", ",") + " Euro";
     }
     updateTotal(subtotalen);
 };
@@ -35,7 +35,7 @@ const updateTotal = (subtotalen) => {
         totaalNum += parseFloat(subtotalen[i].innerHTML);
     }
 
-    totaal.innerHTML = totaalNum + " Euro";
+    totaal.innerHTML = totaalNum.toFixed(2).replace(".", ",") + " Euro";
 };
 
 window.addEventListener("load", setup);
