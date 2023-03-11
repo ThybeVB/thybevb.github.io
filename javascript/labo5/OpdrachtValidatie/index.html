@@ -10,10 +10,30 @@
     </head>
     <body>
         <label for="txtVoornaam">Voornaam:</label>
-        <input id="txtVoornaam" type="text" />
+        <input id="txtVoornaam" name="txtVoornaam" type="text" />
         <span class="errorMessage" id="errVoornaam"></span>
-
         <br />
+
+        <label for="txtNaam">Naam:</label>
+        <input id="txtNaam" name="txtNaam" type="text" />
+        <span class="errorMessage" id="errNaam"></span>
+        <br />
+
+        <label for="dateBirth">Geboortedatum:</label>
+        <input id="dateBirth" name="dateBirth" type="date" />
+        <span class="errorMessage" id="errDoB"></span>
+        <br />
+
+        <label for="txtEmail">Email:</label>
+        <input id="txtEmail" name="txtEmail" type="text">
+        <span class="errorMessage" id="errEmail"></span>
+        <br />
+
+        <label for="txtKinderen">Aantal kinderen:</label>
+        <input id="txtKinderen" name="txtKinderen" type="text">
+        <span class="errorMessage" id="errKinderen"></span>
+        <br />
+
         <input id="btnValideer" type="submit" value="Valideer" />
     </body>
 </html>
