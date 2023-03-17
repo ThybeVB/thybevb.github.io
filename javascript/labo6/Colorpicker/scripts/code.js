@@ -20,15 +20,19 @@ const saveCanvas = (r, g, b) => {
     newcanv.classList.add("swatch");
     newcanv.style.background = `rgb(${r}, ${g}, ${b})`;
 
+    // Button
     let closeButton = document.createElement("button");
     closeButton.innerText = "X";
     closeButton.addEventListener("click", () => {
         document.body.removeChild(newcanv);
     });
 
+    // Klik op kleur
     newcanv.addEventListener("click", (e) => {
         if (e.currentTarget == e.target) {
             updateKleuren(r, g, b);
+            updateText(r, g, b);
+            updateSliders(r, g, b);
         }
     });
 
@@ -59,6 +63,13 @@ const updateText = (colorOne, colorTwo, colorThree) => {
 const updateKleuren = (colorOne, colorTwo, colorThree) => {
     let canvas = document.getElementById("colorDemo");
     canvas.style.background = `rgb(${colorOne}, ${colorTwo}, ${colorThree})`;
+};
+
+const updateSliders = (r, g, b) => {
+    let sliders = document.getElementsByClassName("slider");
+    sliders[0].value = r;
+    sliders[1].value = g;
+    sliders[2].value = b;
 };
 
 window.addEventListener("load", setup);
