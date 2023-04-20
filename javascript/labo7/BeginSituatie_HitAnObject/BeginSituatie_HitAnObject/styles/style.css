@@ -1,9 +1,8 @@
-#playField{
-
-    // aanvullen met hoogte en breedte
+#playField {
+    width: 600px;
+    height: 800px;
 }
 
-
-#target {
-    position: absolute;
+#foto {
+    position: relative;
 }
