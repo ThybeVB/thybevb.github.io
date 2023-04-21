@@ -13,10 +13,9 @@ const setup = () => {
     let foto = document.getElementById("foto");
     foto.style.width = global.IMAGE_SIZE;
     foto.style.height = global.IMAGE_SIZE;
+    foto.addEventListener("click", click);
 
     let playBtn = document.getElementById("playBtn");
-
-    foto.addEventListener("click", click);
     playBtn.addEventListener("click", startGame);
 };
 
@@ -36,7 +35,6 @@ const gameInterval = () => {
 
     let foto = document.getElementById("foto");
     let randomNumber = Math.random() * global.IMAGE_COUNT;
-    const imgItem = document.getElementById("foto");
 
     foto.setAttribute("src", global.IMAGE_PATH_PREFIX + Math.floor(randomNumber) + global.IMAGE_PATH_SUFFIX);
     foto.setAttribute("type", String(Math.floor(randomNumber)));
