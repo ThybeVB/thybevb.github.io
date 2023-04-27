@@ -32,8 +32,6 @@ const showUserData = () => {
 };
 
 const bewaarBewerktePersoon = () => {
-    console.log("Klik op de knop bewaar");
-
     valideer();
 
     let person = {
@@ -55,8 +53,7 @@ const bewaarBewerktePersoon = () => {
 };
 
 const bewerkNieuwePersoon = () => {
-    console.log("Klik op de knop nieuw");
-    let form = document.getElementById("form");
+    let form = document.getElementsByTagName("form")[0];
     form.reset();
     clearAllErrors();
 };
@@ -68,6 +65,7 @@ const updateUI = (exists, person) => {
         let newOption = document.createElement("option");
         newOption.text = uName;
         newOption.value = uName;
+
         list.add(newOption);
     } else {
         let option = list.options[list.selectedIndex];
