@@ -1,8 +1,10 @@
-const storeSliderValues = (r, g, b) => {
-    let slider = {};
-    slider.r = r;
-    slider.g = g;
-    slider.b = b;
+const storeSliderValues = (red, green, blue) => {
+    let slider = {
+        r: red,
+        g: green,
+        b: blue,
+    };
+
     let sliderJson = JSON.stringify(slider);
     localStorage.setItem("vives.be.currSlider", sliderJson);
 };
@@ -34,10 +36,11 @@ const storeSwatches = (swatchComponents) => {
     const childNodes = Array.from(swatchComponents.childNodes);
 
     childNodes.forEach((child) => {
-        let swatch = {};
-        swatch.r = child.getAttribute("data-red");
-        swatch.g = child.getAttribute("data-green");
-        swatch.b = child.getAttribute("data-blue");
+        let swatch = {
+            r: child.getAttribute("data-red"),
+            g: child.getAttribute("data-green"),
+            b: child.getAttribute("data-blue"),
+        };
         arrSwatches.push(swatch);
     });
     let jsonArr = JSON.stringify(arrSwatches);
@@ -49,10 +52,7 @@ const restoreSwatches = () => {
     if (swatchJson !== undefined) {
         let arrSwatches = JSON.parse(swatchJson);
         arrSwatches.forEach((swatch) => {
-            let r = swatch.r;
-            let g = swatch.g;
-            let b = swatch.b;
-            addSwatchComponent(r, g, b);
+            addSwatchComponent(swatch.r, swatch.g, swatch.b);
         });
     }
 };
