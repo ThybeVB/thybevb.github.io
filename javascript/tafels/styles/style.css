@@ -1,0 +1,23 @@
+.header {
+    background-color: #122b40;
+    color: white;
+}
+
+.tafel {
+    margin: 10px;
+    width: 300px;
+    float: left;
+    border: solid 1px #122b40;
+}
+
+.tafel > div {
+    padding: 10px;
+}
+
+tr td:nth-child(2) {
+    background: #d3d3d3;
+}
+
+.even {
+    background-color: #d3d3d3;
+}

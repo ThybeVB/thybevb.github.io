@@ -38,7 +38,7 @@ const storeHistory = () => {
 
 const loadHistory = () => {
     let historyJson = localStorage.getItem("vives.be.history");
-    if (historyJson !== undefined) {
+    if (historyJson != undefined) {
         arrHistory = JSON.parse(historyJson);
         arrHistory.forEach((obj) => {
             createCard(obj.type, obj.query, obj.url);
